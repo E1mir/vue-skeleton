@@ -8,6 +8,14 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix"
+    ],
+    "*.{css,scss,sass,vue}": [
+      "stylelint --fix"
+    ]
+  },
   "dependencies": {
     "vue": "^3.3.4"
   },
