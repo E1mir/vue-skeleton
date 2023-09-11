@@ -1,2 +1,3 @@
 dist
 src/styles/_variables.scss
+src/styles/vendor/*
