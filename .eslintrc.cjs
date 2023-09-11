@@ -53,6 +53,15 @@ module.exports = {
     'arrow-spacing': 'error',
     'block-spacing': 'error',
     'key-spacing': 'error',
-    'space-infix-ops': ['error', { 'int32Hint': false }],
-  }
+    'space-infix-ops': ['error', { 'int32Hint': false }]
+  },
+  overrides: [
+    {
+      // Turn off for views component
+      files: ['**/views/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 'off'
+      }
+    }
+  ]
 }
