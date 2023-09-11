@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgb(255 255 255 / 87%);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+/* ------------------------------------ */
+/*  COLORS  */
+/* ------------------------------------ */
+$color-background: #fff;
+$color-primary: #6357B1;
+$color-button: #25FF90;
+
+/* ------------------------------------ */
+/*  BREAKPOINTS  */
+/* ------------------------------------ */
+$--sm: 640px;
+$--md: 768px;
+$--lg: 1024px;
+$--xl: 1280px;
+$--2xl: 1536px;
+
+/* ------------------------------------ */
+/*  Content  */
+/* ------------------------------------ */
+$content-width: 1168px;
