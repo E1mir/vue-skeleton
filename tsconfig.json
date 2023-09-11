@@ -13,13 +13,25 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "types": ["vitest/globals"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "node_modules/vitest/globals.d.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
