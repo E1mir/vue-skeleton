@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.js,.vue, .",
+    "stylelint": "stylelint \"**/*.{css,scss,sass,vue}\"",
+    "lint-fix": "eslint --ext .ts,.js,.vue, . --fix",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
