@@ -4,9 +4,9 @@
   <div class="card">
     <button
       type="button"
-      @click="count++"
+      @click="counterStore.increment"
     >
-      count is {{ count }}
+      count is {{ counterStore.count }}
     </button>
     <p>
       Edit
@@ -63,12 +63,16 @@
 import { ref } from 'vue'
 
 import { getPosts } from '@/services/api'
+import { useCounterStore } from '@/stores/counter.ts'
+
+
 
 defineProps<{ msg: string }>()
 
-const count = ref(0)
+const counterStore = useCounterStore()
 const posts = ref([])
 const loading = ref(false)
+
 const getAllPosts = async () => {
   loading.value = true
   try {
